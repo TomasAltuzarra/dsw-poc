@@ -5,17 +5,25 @@
         <link rel='stylesheet' href='/stylesheets/style.css'/>
     </head>
     <body>
-        <%- include('partials/nav') %>
-        <h1><%= title %></h1>
-        <p>Welcome to <%= title %></p>
-            <% if(user) { %>
-                <div class="profileInfo">
-                    <img src="<%= user.picture %>" />
-                    <p class="name">
-                        <%= user.nickname.charAt(0).toUpperCase() + user.nickname.slice(1) %>
-                    </p>
-                </div>
-            <% } %>
+        <div class="content">
+            <div><%- include('partials/nav') %></div>
+            <div style="text-align: center;">
+                <h1><%= title %></h1>
+                <p>Datos del perfil</p>
+            </div>
+        </div>
+        <div class="userInfo">
+            <div class="controlProfile">
+                <% if(user) { %>
+                    <div class="profileInfo">
+                        <img src="<%= user.picture %>" />
+                        <p class="name">
+                            <%= user.nickname.charAt(0).toUpperCase() + user.nickname.slice(1) %>
+                        </p>
+                    </div>
+                <% } %>
+            </div>
         <pre><%= JSON.stringify(user,null,2) %></pre> 
+        </div>
     </body>
 </html>

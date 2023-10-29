@@ -5,9 +5,12 @@
         <link rel='stylesheet' href='/stylesheets/style.css'/>
     </head>
     <body>
-        <%- include('partials/nav') %>
-        <h1><%= title %></h1>
-        <p>Welcome to <%= title %></p>
-
+        <div class="content">
+            <div><%- include('partials/nav') %></div>
+            <div style="text-align: center;">
+                <h1><%= title %></h1>
+                <p>Bienvenidos a la demo de Auth0 y OAuth 2.0</p>
+            </div>
+        </div>
     </body>
 </html>

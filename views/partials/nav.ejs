@@ -1,3 +1,4 @@
+<!--
 <nav>
     <ul>
         <li><a href="/">Home</a></li>
@@ -8,4 +9,17 @@
         <li><a href="/logout">Logout</a></li>
         <% } %>
     </ul>
+        <button> <a class="texto" href="/secured" > Secure </a></button>
+</nav>
+-->
+
+<nav class="barra">
+    <h1> </h1>
+    <button> <a  class="texto" href="/">Home </a></button>
+    <button> <a class="texto" href="/secured" > Usuario </a></button>
+    <% if(!isAuthenticated) {%>
+    <button> <a class="texto"  href="/login">Login </a></button>
+    <% } else {%>
+    <button> <a class="texto" href="/logout">Logout </a></button>
+    <% } %>
 </nav>

@@ -1,9 +1,9 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
 
 .profileInfo {
     width: 200px;
@@ -22,4 +22,103 @@ body {
     font-size: 2em;
     margin: 0;
     text-align: center;
+}
+
+------------------------
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #436b7e;
+}
+
+body > div {
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+
+.userInfo {
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.texto {
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: large;
+}
+
+.profileInfo {
+    width: 200px;
+    padding: 0.5em;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #0008;
+    text-align: center;
+}
+
+.controlProfile{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.profileInfo img {
+    width: 100%;
+}
+
+.profileInfo .name {
+    margin: 0;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #04AA6D;
+    color: white;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    display: flex; /* Make each button a block element */
+    margin: 10px; /* Add margin to separate them */
+    width: 100%; /* Make buttons full width */
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+    align-items: center;
 }
