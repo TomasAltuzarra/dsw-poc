@@ -22,5 +22,5 @@ app.use(auth(config));
 app.use("/" , indexRouter);
 
 app.listen(3000,()=> {
-    console.log('Express is runing on port 3000');
+    console.log('Runing http://localhost:3000/');
 });
