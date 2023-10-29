@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Monteserrart&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-    font-family: "Monserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 .profileInfo {
     width: 200px;
