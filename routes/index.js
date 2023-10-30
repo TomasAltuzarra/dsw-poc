@@ -2,8 +2,9 @@ var express = require("express");
 var router = express.Router();
 const {requiresAuth} = require('express-openid-connect')
 
+// req.isAuthenticated is provided from the auth router
+
 router.get("/", (req, res) => {
-    //console.log(req.oidc.isAuthenticated());
     res.render("index", {
         title: "PoC Home", 
         isAuthenticated: req.oidc.isAuthenticated(),
